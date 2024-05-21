@@ -13,11 +13,11 @@
  }
 
  :root {
-    --bg-color:#1f242d;
-    --second-bg-color:#323946;
+    --bg-color: rgb(17,33,58);
+    --second-bg-color: rgb(17,33,58);
     --text-color:#fff;
-    --main-color:#0ef; 
- }
+    --main-color: #A6E22E;
+   }
 
  html{
     font-size: 62.5%;

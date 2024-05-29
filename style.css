@@ -365,6 +365,9 @@
    html{
       font-size: 55%;
    }
+   body{
+      background: var(--bg-color);
+   }
 }
 
 @media(max-width:991px){
@@ -387,6 +390,9 @@
    }
    .footer{
       padding: 2rem 3%;
+   }
+   body{
+      background: var(--bg-color);
    }
 }
 
@@ -446,11 +452,17 @@
    .portfolio-container{
       grid-template-columns: repeat(2,1fr);
    }
+   body{
+      background: var(--bg-color);
+   }
 }
 
 @media(max-width:617px){
    .portfolio-container{
       grid-template-columns: 1fr;
+   }
+   body{
+      background: var(--bg-color);
    }
 }
 
@@ -461,6 +473,9 @@
 
    .contact form .input-box input{
       width: 100%;
+   }
+   body{
+      background: var(--bg-color);
    }
 }
 
@@ -480,6 +495,9 @@
    .footer p{
       text-align: center;
       margin-top: 2rem;
+   }
+   body{
+      background: var(--bg-color);
    }
 }
 

@@ -366,7 +366,7 @@
       font-size: 55%;
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -392,7 +392,7 @@
       padding: 2rem 3%;
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -453,7 +453,7 @@
       grid-template-columns: repeat(2,1fr);
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -462,7 +462,7 @@
       grid-template-columns: 1fr;
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -475,7 +475,7 @@
       width: 100%;
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -497,7 +497,7 @@
       margin-top: 2rem;
    }
    body{
-      background: var(--bg-color);
+      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -505,4 +505,4 @@
    color: #61b752;
    margin-top: -10px;
    display: block;
-} 
+}

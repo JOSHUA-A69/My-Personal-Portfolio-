@@ -365,9 +365,7 @@
    html{
       font-size: 55%;
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
@@ -394,9 +392,7 @@
    .footer{
       padding: 2rem 3%;
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
@@ -458,9 +454,7 @@
    .portfolio-container{
       grid-template-columns: repeat(2,1fr);
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+  
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
@@ -470,9 +464,7 @@
    .portfolio-container{
       grid-template-columns: 1fr;
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
@@ -486,9 +478,7 @@
    .contact form .input-box input{
       width: 100%;
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
@@ -511,9 +501,7 @@
       text-align: center;
       margin-top: 2rem;
    }
-   body{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   
    section{
       background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }

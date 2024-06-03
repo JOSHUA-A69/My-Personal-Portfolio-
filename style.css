@@ -365,10 +365,6 @@
    html{
       font-size: 55%;
    }
-   
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
 }
 
 @media(max-width:991px){
@@ -391,11 +387,7 @@
    }
    .footer{
       padding: 2rem 3%;
-   }
-   
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
+   } 
 }
 
 @media(max-width:768px){
@@ -454,19 +446,11 @@
    .portfolio-container{
       grid-template-columns: repeat(2,1fr);
    }
-  
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
-   }
 }
 
 @media(max-width:617px){
    .portfolio-container{
       grid-template-columns: 1fr;
-   }
-   
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -477,10 +461,6 @@
 
    .contact form .input-box input{
       width: 100%;
-   }
-   
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 
@@ -500,10 +480,6 @@
    .footer p{
       text-align: center;
       margin-top: 2rem;
-   }
-   
-   section{
-      background:linear-gradient(88deg, rgba(17,33,58,1) 0%, rgba(38,62,74,1) 100%);
    }
 }
 

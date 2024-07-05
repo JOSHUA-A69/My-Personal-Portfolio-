@@ -1169,8 +1169,8 @@ header.scrolled {
 }
 
 .gallery-main {
-    margin-top: 150px;
-    margin-bottom: 150px; /* Add bottom margin to prevent overlapping with footer */
+    margin-top: 100px; /* Adjust this value as needed to move the gallery section up */
+    margin-bottom: 150px; /* Ensure there's space between the gallery and footer */
     display: flex;
     justify-content: center;
 }
@@ -1194,6 +1194,7 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    margin-top: -20px; /* Negative margin to move the header up */
 }
 
 .gallery-main .gallery-section .column .header .text {
@@ -1246,6 +1247,7 @@ header.scrolled {
     border: 2px solid #ccc;
     border-radius: 20px;
 }
+
 
 
 @media (max-width: 500px) {

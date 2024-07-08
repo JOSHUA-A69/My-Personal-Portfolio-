@@ -41,6 +41,7 @@ Replace the initialization script with your actual EmailJS API key:
 
 
 
+
 Modify script.js
 Replace the placeholders with your actual Service ID and Template ID:
 

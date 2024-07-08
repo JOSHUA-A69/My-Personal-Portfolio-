@@ -8,29 +8,28 @@ Run the following command to clone the repository:
 git clone https://github.com/JOSHUA-A69/My-Personal-Portfolio-
 
 In order for the api to work follow this steps:
-Step 1: Sign Up for EmailJS
 
+Step 1: Sign Up for EmailJS
 Go to the EmailJS website.
 Sign up for a free account if you don't already have one.
-Step 2: Create an EmailJS Service
 
+Step 2: Create an EmailJS Service
 Once logged in, navigate to the "Email Services" section.
 Click "Add new service" and follow the prompts to configure your email service. You will link it to your email provider (such as Gmail, Outlook, etc.).
-Step 3: Create an EmailJS Template
 
+Step 3: Create an EmailJS Template
 Go to the "Email Templates" section.
 Click "Create new template" and design your email template as needed.
-Step 4: Obtain Your EmailJS API Key
 
+Step 4: Obtain Your EmailJS API Key
 Go to the "Account" section (usually under your profile or settings).
 You will find your User ID here, which acts as your API key.
-Step 5: Obtain Your Service ID and Template ID
 
+Step 5: Obtain Your Service ID and Template ID
 Go to the "Email Services" section and select the service you created. Your Service ID will be listed there.
 Go to the "Email Templates" section and select the template you created. Your Template ID will be listed there.
 
 Modify contact.html
-
 Replace the initialization script with your actual EmailJS API key:
 
 <script type="text/javascript">
@@ -40,7 +39,6 @@ Replace the initialization script with your actual EmailJS API key:
 </script>
 
 Modify script.js
-
 Replace the placeholders with your actual Service ID and Template ID:
 
 function sendMail() {

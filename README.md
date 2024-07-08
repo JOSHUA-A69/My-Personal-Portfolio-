@@ -32,20 +32,25 @@ Go to the "Email Templates" section and select the template you created. Your Te
 Modify contact.html
 Replace the initialization script with your actual EmailJS API key:
 
+
 <script type="text/javascript">
     (function () {
         emailjs.init("YOUR_API_KEY_HERE");
     })();
 </script>
 
+
+
 Modify script.js
 Replace the placeholders with your actual Service ID and Template ID:
+
 
 function sendMail() {
     contactSubmitAfter.classList.add('show');
     formSection.classList.add('hide');
     contactSection.classList.add('csa-cs');
     contactForm.classList.add('csa-cf');
+
 
     var params = {
         name: document.getElementById('name').value,

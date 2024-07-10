@@ -39,13 +39,25 @@ window.onscroll = function () {
 }
 
 
+import { serviceID } from './service_config.js';
+import { templateID } from './template_config.js';
+import { EMAILJS_USER_ID } from '../pages/config.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize EmailJS
+    emailjs.init(EMAILJS_USER_ID); 
+
+    // Attach the sendMail function to form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', validateForm);
+    }
+});
+
 const contactSection = document.querySelector('.contact-section');
 const formSection = document.querySelector('.form-section');
 const contactSubmitAfter = document.querySelector('.contact-submit-after');
 const csaOK = document.querySelector('.csa-ok');
-
-
-const contactForm = document.querySelector('.contact-form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
@@ -56,113 +68,91 @@ const contactLoad = document.querySelector('.contact-load');
 const submitText = document.querySelector('.submit-text');
 
 if (csaOK) {
-	csaOK.onclick = () => {
-		contactSubmitAfter.classList.remove('show');
-		formSection.classList.remove('hide');
-		contactSection.classList.remove('csa-cs');
-		contactForm.classList.remove('csa-cf');
-		contactButton.classList.remove('loading');
-		contactLoad.classList.remove('show');
-		submitText.classList.remove('hide');
-		// contactSubmitAfter.classList.add('hide');
-	}
+    csaOK.onclick = () => {
+        contactSubmitAfter.classList.remove('show');
+        formSection.classList.remove('hide');
+        contactSection.classList.remove('csa-cs');
+        contactForm.classList.remove('csa-cf');
+        contactButton.classList.remove('loading');
+        contactLoad.classList.remove('show');
+        submitText.classList.remove('hide');
+    };
 }
 
-// Function to validate the form
 function validateForm(event) {
-	event.preventDefault(); // Prevent the form from submitting
-	let isValid = true;
-	emailIsValid = true;
-	nameIsValid = true;
-	messageIsValid = true;
+    event.preventDefault(); // Prevent the form from submitting
+    let isValid = true;
+    let emailIsValid = true;
+    let nameIsValid = true;
+    let messageIsValid = true;
 
-	// Check if Name field is empty
-	if (nameInput.value.trim() === '') {
-		isValid = false;
-		nameIsValid = false;
-	}
+    // Check if Name field is empty
+    if (nameInput.value.trim() === '') {
+        isValid = false;
+        nameIsValid = false;
+    }
 
-	// Check if Email field is empty or not a valid email address
-	if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value)) {
-		isValid = false;
-		if (emailInput.value.trim() !== '' && !isValidEmail(emailInput.value)) {
-			emailIsValid = false;
-		}
-	}
+    // Check if Email field is empty or not a valid email address
+    if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value)) {
+        isValid = false;
+        if (emailInput.value.trim() !== '' && !isValidEmail(emailInput.value)) {
+            emailIsValid = false;
+        }
+    }
 
-	// Check if Message field is empty
-	if (messageInput.value.trim() === '') {
-		isValid = false;
-		messageIsValid = false;
-	}
+    // Check if Message field is empty
+    if (messageInput.value.trim() === '') {
+        isValid = false;
+        messageIsValid = false;
+    }
 
-	if (!isValid) {
-		// Display the error message
-		errorDiv.classList.add('error-show');
-		emailErrorDiv.classList.remove('error-show');
-		if (nameIsValid && messageIsValid && !emailIsValid) {
-			errorDiv.classList.remove('error-show');
-			emailErrorDiv.classList.add('error-show');
-		}
-	} else {
-		// Form is valid, it can be sumbitted now
-		emailErrorDiv.classList.remove('error-show');
-		errorDiv.classList.remove('error-show');
-		contactButton.classList.add('loading');
-		contactLoad.classList.add('show');
-		submitText.classList.add('hide');
-		setTimeout(function () {
-			sendMail();
-		}, 2000);
-	}
+    if (!isValid) {
+        // Display the error message
+        errorDiv.classList.add('error-show');
+        emailErrorDiv.classList.remove('error-show');
+        if (nameIsValid && messageIsValid && !emailIsValid) {
+            errorDiv.classList.remove('error-show');
+            emailErrorDiv.classList.add('error-show');
+        }
+    } else {
+        // Form is valid, it can be submitted now
+        emailErrorDiv.classList.remove('error-show');
+        errorDiv.classList.remove('error-show');
+        contactButton.classList.add('loading');
+        contactLoad.classList.add('show');
+        submitText.classList.add('hide');
+        setTimeout(function () {
+            sendMail();
+        }, 2000);
+    }
 }
 
-// Function to validate email format using a regular expression
 function isValidEmail(email) {
-	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	return emailRegex.test(email);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
-
-// Event listener for form submission
-if (contactForm) {
-	contactForm.addEventListener('submit', validateForm);
-}
-
-
-
 
 function sendMail() {
+    var params = {
+        name: nameInput.value,
+        email: emailInput.value,
+        message: messageInput.value
+    };
 
-	contactSubmitAfter.classList.add('show');
-	formSection.classList.add('hide');
-	contactSection.classList.add('csa-cs');
-	contactForm.classList.add('csa-cf');
+    emailjs.send(serviceID, templateID, params)
+        .then(
+            res => {
+                nameInput.value = "";
+                emailInput.value = "";
+                messageInput.value = "";
 
-
-	    var params = {
-		name: document.getElementById('name').value,
-		email: document.getElementById('email').value,
-		message: document.getElementById('message').value
-	}
-
-	const serviceID = "service_s4frrmr";
-	const templateID = "template_xob7odg"
-
-	emailjs.send(serviceID, templateID, params)
-		.then(
-		res => {
-			document.getElementById('name').value = "";
-			document.getElementById('email').value = "";
-			document.getElementById('message').value = "";
-
-			contactSubmitAfter.classList.add('show');
-				formSection.classList.add('hide');
-				contactSection.classList.add('csa-cs');
-				contactForm.classList.add('csa-cf');
-
-			}
-	 	)
-	 	.catch((error) => {
-	 		console.log(error);
-	 	})
+                contactSubmitAfter.classList.add('show');
+                formSection.classList.add('hide');
+                contactSection.classList.add('csa-cs');
+                contactForm.classList.add('csa-cf');
+            }
+        )
+        .catch((error) => {
+            console.log(error);
+        });
 }

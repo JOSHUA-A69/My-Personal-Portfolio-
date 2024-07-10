@@ -39,7 +39,7 @@
     <div class="page">
         <main class="contact-main">
             <div class="contact-full">
-                <div class="contact-section">
+                <div id="contactSection" class="contact-section">
                     <div class="cs-top mobile-show">
                         <h1>Reach Me</h1>
                         <div class="border-line"></div>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="cs-item number">
-                        <div class="icon"><i class="fas fa-phone"></i></i></div>
+                        <div class="icon"><i class="fas fa-phone"></i></div>
                         <div class="text">
                             <div class="placeHolder">Phone</div>
                             <div class="info">09195034746</div>
@@ -62,22 +62,21 @@
                         <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="text">
                             <div class="placeHolder">Address</div>
-                            <div class="info">Tagbilaran City,Bohol Philippines </div>
+                            <div class="info">Tagbilaran City,Bohol Philippines</div>
                         </div>
                     </div>
                 </div>
                 <section class="contact-form">
                     <h1>Contact Me</h1>
                     <div class="border-line"></div>
-                    <!-- <p>Feel free to get in touch with me by filling out the form below.</p> -->
-                    <div class="contact-submit-after">
+                    <div id="contactSubmitAfter" class="contact-submit-after">
                         <div class="box">
                             <i class="fa-solid fa-circle-check csa-icon"></i>
                             <div class="csa-text">Message sent successfully</div>
                             <div class="csa-ok">OK</div>
                         </div>
                     </div>
-                    <form id="contact-form" class="form-section" novalidate>
+                    <form id="contactForm" class="form-section" novalidate>
                         <div class="form-group name-section">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -90,12 +89,9 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <div class="error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please fill out all the
-                            fields
-                        </div>
-                        <div class="email-error"><i class="fa-solid fa-circle-xmark error-icon"></i>Email address is not
-                            valid</div>
-                        <button type="submit" id="contact-submit" class="contact-button">
+                        <div class="error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please fill out all the fields</div>
+                        <div class="email-error"><i class="fa-solid fa-circle-xmark error-icon"></i>Email address is not valid</div>
+                        <button type="submit" id="contactSubmit" class="contact-button">
                             <div class="contact-load">
                                 <div class="line"></div>
                                 <div class="line"></div>
@@ -124,15 +120,12 @@
 
 
     <div class="nav-touch-close" id="nav-tc-js"></div>
-
-    <script type="text/javascript" src="../script/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="config.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init(EMAILJS_USER_ID );
-        })();
-    </script>
+    <script type="module" src="../script/service_config.js"></script>
+    <script type="module" src="../script/template_config.js"></script>
+    <script type="module" src="./config.js"></script>
+    <script type="module" src="../script/script.js"></script>
+    
 
 </body>
 

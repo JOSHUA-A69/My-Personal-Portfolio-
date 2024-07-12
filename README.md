@@ -72,7 +72,7 @@ Go to the "Email Templates" section and select the template you created. Your Te
     </script>
     ```
 
-    ## Example
+    **Example**
 
 Here is a brief overview of how the `script.js` file works:
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-## Usage
+**Usage**
 
 1. **Open the contact form**:
     Navigate to the page with the contact form.
@@ -103,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 3. **Submit the form**:
     Click on the submit button to send the email.
+
+
 
 
 Important Note!

@@ -1,0 +1,4 @@
+# Ignore configuration files
+SRC/pages/config.js
+SRC/script/service_config.js
+SRC/script/template_config.js

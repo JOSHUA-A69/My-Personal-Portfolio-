@@ -113,4 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 **Important Note!**
-This method of sending emails is not secure. It exposes your API key and other sensitive information in the client-side code, which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle sensitive information securely.
+
+This method of sending emails is not secure. It exposes your API key and other sensitive information in the client-side code,
+
+which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle 
+
+sensitive information securely.

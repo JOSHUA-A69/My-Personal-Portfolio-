@@ -1,6 +1,6 @@
 **My Personal Portfolio**
 
-This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback!
+This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit the <a href="https://joshua-a69.github.io/My-Personal-Portfolio-/">portfolio.</a>
 
 **Clone the Portfolio Repository**
 
@@ -107,10 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-Important Note!
+/*Important Note!
 This method of sending emails is not secure. It exposes your API key and other sensitive information in the client-side code, which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle sensitive information securely.
 
-For more details and updates, visit the <a href="https://joshua-a69.github.io/My-Personal-Portfolio-/">portfolio.</a>
-
 ⭐️ Star the Repo
-If you find this project helpful or interesting, please consider starring the repository! Your support is greatly appreciated and motivates me to continue improving and adding new features.
+If you find this project helpful or interesting, please consider starring the repository! Your support is greatly appreciated and motivates me to continue improving and adding new features.*\

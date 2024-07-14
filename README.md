@@ -1,6 +1,6 @@
 **My Personal Portfolio**
 
-This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit the <a href="https://joshua-a69.github.io/My-Personal-Portfolio-/">portfolio.</a>
+This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
 
 
 **⭐️ Star the Repo**

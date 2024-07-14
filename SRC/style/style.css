@@ -1596,7 +1596,6 @@ header.scrolled {
 	column-gap: 10px;
 	padding: 10px;
 	border: 2px solid #ccc;
-	border-radius: 110px 20px 20px 110px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(4px);
@@ -1611,7 +1610,6 @@ header.scrolled {
 	width: 200px;
 	display: block;
 	border: 2px solid var(--main-color);
-	border-radius: 50%;
 }
 
 .testimonials-main .testimonials-section .section .block .content {
@@ -1663,12 +1661,11 @@ header.scrolled {
 		margin-right: 20px; */
 		flex-direction: column;
 		align-items: center;
-		border-radius: 20px;
+		
 	}
 
 	.testimonials-main .testimonials-section .section .row .block .image img {
 		width: 200px;
-		border-radius: 50%;
 	}
 
 	.testimonials-main .testimonials-section .section .row .block .content {

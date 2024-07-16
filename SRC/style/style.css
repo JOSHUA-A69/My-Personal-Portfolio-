@@ -1765,3 +1765,12 @@ header.scrolled {
 		row-gap: 10px;
 	}
 }
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+    }
+

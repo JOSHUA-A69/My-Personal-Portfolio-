@@ -41,7 +41,7 @@
     <div class="page">
         <main class="education-main">
             <div class="education-section">
-                <div class="study first">
+                <div class="study first fade-in">
                     <div class="image">
                         <img src="../CV/hnu-logo-rgb.png" alt="college-school">
                     </div>
@@ -53,7 +53,7 @@
                         <div class="text">I am pursuing Bachelors degree in information technology (BSIT).</div>
                     </div>
                 </div>
-                <div class="study second">
+                <div class="study second fade-in">
                     <div class="image">
                         <img src="../CV/309396205_474305218046969_2745999021061123473_n.jpg" alt="shs">
                     </div>
@@ -65,7 +65,7 @@
                         <div class="text">I was pursing a tourism track  from Grade 11 - Grade 12 and graduated high school in 2022 </div>
                     </div>
                 </div>
-                <div class="study third">
+                <div class="study third fade-in">
                     <div class="image">
                         <img src="../CV/305289800_474566958016869_1317869573741745495_n.jpg" alt="formative-school-years">
                     </div>
@@ -98,7 +98,34 @@
     <div class="nav-touch-close" id="nav-tc-js"></div>
 
     <script type="module" src="../script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
 
+    // Function to add class 'show' to elements in viewport
+    function checkAnimation() {
+      $('.fade-in').each(function() {
+        if (isElementInViewport(this)) {
+          $(this).addClass('show');
+        }
+      });
+    }
+
+    // Check animation on scroll and on document ready
+    $(window).on('scroll', checkAnimation);
+    $(document).ready(checkAnimation);
+  });
+</script>
 </body>
 
 </html>

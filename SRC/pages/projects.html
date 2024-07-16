@@ -41,13 +41,13 @@
     <main class="testimonials-main">
         <div class="testimonials-section">
             <div class="testimonials-header">
-                <div class="header-text">Some of my projects so FAR..</div>
-                <div class="header-line"></div>
+                <div class="header-text fade-in">Some of my projects so FAR..</div>
+                <div class="header-line fade-in"></div>
             </div>
             <div class="section">
                 <div class="row">
                     <!-- <div class="test1"> -->
-                    <div class="block maddat">
+                    <div class="block maddat fade-in">
                         <div class="image">
                            <a href="https://joshua-a69.github.io/RyoukouTravel-website-School-Project/LogInPage.html" target="_blank"><img src="../CV/Screenshot 2024-04-30 125359.png" alt="proj1"></a>
                         </div>
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block oasis">
+                    <div class="block oasis fade-in">
                         <div class="image">
                             <a href="https://joshua-a69.github.io/School-Project-eCom-Website/index.html" target="_blank" ><img src="../CV/SScameraShop.png" alt="proj2"></a>
                         </div>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="row">
                     <!-- <div class="test1"> -->
-                    <div class="block sudip">
+                    <div class="block sudip fade-in">
                         <div class="image">
                             <a href="https://joshua-a69.github.io/Calorie-Counter/CalorieCounter.html" target="_blank"><img src="../CV/Screenshot 2024-07-03 100133.png" alt="proj3"></a>
                         </div>
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block subin">
+                    <div class="block subin fade-in">
                         <div class="image">
                            <a href="https://github.com/JOSHUA-A69?tab=repositories" target="_blank"><img src="../CV/Screenshot 2024-07-03 101830.png" alt="proj4"></a>
                         </div>
@@ -136,6 +136,34 @@
 
     <script type="module" src="../script/script.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to add class 'show' to elements in viewport
+    function checkAnimation() {
+      $('.fade-in').each(function() {
+        if (isElementInViewport(this)) {
+          $(this).addClass('show');
+        }
+      });
+    }
+
+    // Check animation on scroll and on document ready
+    $(window).on('scroll', checkAnimation);
+    $(document).ready(checkAnimation);
+  });
+</script>
 </body>
 
 </html>

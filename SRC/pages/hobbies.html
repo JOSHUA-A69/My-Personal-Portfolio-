@@ -40,11 +40,11 @@
     <main class="hobbies-main">
         <div class="hobbies-section">
             <div class="hobbies-header">
-                <div class="header-text">My Hobbies</div>
-                <div class="header-line"></div>
+                <div class="header-text fade-in">My Hobbies</div>
+                <div class="header-line fade-in"></div>
             </div>
             <div class="section">
-                <div class="row first">
+                <div class="row first fade-in">
                     <div class="hobbies 1">
                         <div class="image">
                             <img src="../CV/Basketball-facts-scaled.jpg" alt="hob1">
@@ -57,7 +57,7 @@
                             I love basketball because it brings me a sense of joy and excitement, keeps me physically active, and allows me to connect with friends and people through our shared passion for the game.
                         </div>
                     </div>
-                    <div class="hobbies 2">
+                    <div class="hobbies 2 fade-in">
                         <div class="image">
                             <img src="../CV/midsection-of-man-playing-on-chess-773125399-5bcd3ac846e0fb0051ef2014.jpg" alt="hob2">
                         </div>
@@ -70,8 +70,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row second">
-                    <div class="hobbies 3">
+                <div class="row second fade-in">
+                    <div class="hobbies 3 ">
                         <div class="image">
                             <img src="../CV/coding-on-a-computer.jpg" alt="hob3">
                         </div>
@@ -83,7 +83,7 @@
                             Allows me to create and solve problems, fuels my creativity, and constantly offers new challenges to learn and grow. Plus, it's incredibly rewarding to see my ideas come to life through code.
                         </div>
                     </div>
-                    <div class="hobbies 4">
+                    <div class="hobbies 4 fade-in">
                         <div class="image">
                             <img src="../CV/pop-culture.jpg" alt="hob4">
                         </div>
@@ -118,6 +118,34 @@
     <div class="nav-touch-close" id="nav-tc-js"></div>
 
     <script type="module" src="../script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to add class 'show' to elements in viewport
+    function checkAnimation() {
+      $('.fade-in').each(function() {
+        if (isElementInViewport(this)) {
+          $(this).addClass('show');
+        }
+      });
+    }
+
+    // Check animation on scroll and on document ready
+    $(window).on('scroll', checkAnimation);
+    $(document).ready(checkAnimation);
+  });
+</script>
 
 </body>
 

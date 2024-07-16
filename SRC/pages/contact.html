@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="page">
+    <div class="page fade-in">
         <main class="contact-main">
             <div class="contact-full">
                 <div id="contactSection" class="contact-section">
@@ -125,6 +125,34 @@
     <script type="module" src="../script/template_config.js"></script>
     <script type="module" src="./config.js"></script>
     <script type="module" src="../script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Function to check if element is in viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to add class 'show' to elements in viewport
+    function checkAnimation() {
+      $('.fade-in').each(function() {
+        if (isElementInViewport(this)) {
+          $(this).addClass('show');
+        }
+      });
+    }
+
+    // Check animation on scroll and on document ready
+    $(window).on('scroll', checkAnimation);
+    $(document).ready(checkAnimation);
+  });
+</script>
     
 
 </body>

@@ -1,9 +1,15 @@
 # My Personal Portfolio
+<details>
+    <summary><button onclick="toggleInfo()" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Show More Info</button></summary>
 
-    This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
+<div id="moreInfo" style="display: none; padding-top: 20px;">
+
+    This portfolio is a continuous work in progress and will keep evolving as I improve my skills. 
+    Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
 
     ⭐️ Star the Repo
-    If you find this project helpful or interesting, please consider starring the repository! Your support is greatly appreciated and motivates me to continue improving and adding new features.
+    If you find this project helpful or interesting, please consider starring the repository! 
+    Your support is greatly appreciated and motivates me to continue improving and adding new features.
 
     Clone the Portfolio Repository
     Open your terminal or command prompt
@@ -17,7 +23,8 @@
 
     Step 2: Create an EmailJS Service
     Once logged in, navigate to the "Email Services" section.
-    Click "Add new service" and follow the prompts to configure your email service. You will link it to your email provider (such as Gmail, Outlook, etc.).
+    Click "Add new service" and follow the prompts to configure your email service. You will link it to your email provider 
+    (such as Gmail, Outlook, etc.).
 
     Step 3: Create an EmailJS Template
     Go to the "Email Templates" section.
@@ -79,4 +86,18 @@
     Click on the submit button to send the email.
 
     Important Note!
-    This method of sending emails is not secure. It exposes your API key and other sensitive information in the client-side code, which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle sensitive information securely.
+    This method of sending emails is not secure. 
+    It exposes your API key and other sensitive information in the client-side code, which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle sensitive information securely.
+   </div>
+  </details>
+
+<script>
+    function toggleInfo() {
+      var moreInfo = document.getElementById('moreInfo');
+      if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+      } else {
+        moreInfo.style.display = 'none';
+      }
+    }
+  </script>

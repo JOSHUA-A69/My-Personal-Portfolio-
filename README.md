@@ -5,11 +5,13 @@
  <div id="moreInfo" style="display: none; padding-top: 20px;">
 
     This portfolio is a continuous work in progress and will keep evolving as I improve my skills. 
-    Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
+    Feel free to explore and provide feedback! For more details and updates, visit this portfolio 
+    repository.
 
     ⭐️ Star the Repo
     If you find this project helpful or interesting, please consider starring the repository! 
-    Your support is greatly appreciated and motivates me to continue improving and adding new features.
+    Your support is greatly appreciated and motivates me to continue improving and adding new 
+    features.
 
     Clone the Portfolio Repository
     Open your terminal or command prompt
@@ -76,23 +78,7 @@
             contactForm.addEventListener('submit', validateForm);
         }
     });
-
-
-<script>
-<div id="moreInfo" style="display: none; padding-top: 20px;">
-    function toggleInfo() {
-      var moreInfo = document.getElementById('moreInfo');
-      if (moreInfo.style.display === 'none') {
-        moreInfo.style.display = 'block';
-      } else {
-        moreInfo.style.display = 'none';
-      }
-    }
-    </div>
-     </script>
-    
-
-    Usage
+     Usage
     Open the contact form:
     Navigate to the page with the contact form.
     Fill out the form:
@@ -104,6 +90,20 @@
     It exposes your API key and other sensitive information in the client-side code, 
     which can be accessed by anyone visiting your site.For production applications, 
     consider using a server-side solution to handle sensitive information securely.
+
+    
+<script>
+  //Don't mind this code
+    function toggleInfo() {
+      var moreInfo = document.getElementById('moreInfo');
+      if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+      } else {
+        moreInfo.style.display = 'none';
+      }
+    }
+     </script>
+    
    </div>
   </details>
   

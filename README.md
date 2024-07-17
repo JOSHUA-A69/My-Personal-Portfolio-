@@ -36,8 +36,10 @@
     You will find your User ID here, which acts as your API key.
 
     Step 5: Obtain Your Service ID and Template ID
-    Go to the "Email Services" section and select the service you created. Your Service ID will be listed there.
-    Go to the "Email Templates" section and select the template you created. Your Template ID will be listed there.
+    Go to the "Email Services" section and select the service you created. 
+    Your Service ID will be listed there.
+    Go to the "Email Templates" section and select the template you created. 
+    Your Template ID will be listed there.
 
     Integrating EmailJS with the Contact Form
     Create configuration files:

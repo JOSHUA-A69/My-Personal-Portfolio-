@@ -1,8 +1,5 @@
 # My Personal Portfolio
 
-<button onclick="toggleInfo()" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Show More Info</button>
-
-<div id="moreInfo" style="display: none; padding-top: 20px;">
     This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
 
     ⭐️ Star the Repo
@@ -83,15 +80,3 @@
 
     Important Note!
     This method of sending emails is not secure. It exposes your API key and other sensitive information in the client-side code, which can be accessed by anyone visiting your site. For production applications, consider using a server-side solution to handle sensitive information securely.
-</div>
-
-<script>
-    function toggleInfo() {
-        var moreInfo = document.getElementById('moreInfo');
-        if (moreInfo.style.display === 'none') {
-            moreInfo.style.display = 'block';
-        } else {
-            moreInfo.style.display = 'none';
-        }
-    }
-</script>

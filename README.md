@@ -1,83 +1,80 @@
 # My Personal Portfolio
-
 <details>
     <summary><button onclick="toggleInfo()" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Show More Info</button></summary>
 
-    <div id="moreInfo" style="display: none; padding-top: 20px;">
+ <div id="moreInfo" style="display: none; padding-top: 20px;">
 
-        This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
+    This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
 
-        ⭐️ Star the Repo
-        If you find this project helpful or interesting, please consider starring the repository! Your support is greatly appreciated and motivates me to continue improving and adding new features.
+    ⭐️ Star the Repo
+    If you find this project helpful or interesting, please consider starring the repository! 
+    Your support is greatly appreciated and motivates me to continue improving and adding new features.
 
-        Clone the Portfolio Repository
-        Open your terminal or command prompt
-        Run the following command to clone the repository:
-        git clone https://github.com/JOSHUA-A69/My-Personal-Portfolio-
+    Clone the Portfolio Repository
+    Open your terminal or command prompt
+    Run the following command to clone the repository:
+    git clone https://github.com/JOSHUA-A69/My-Personal-Portfolio-
 
-        Setting Up EmailJS for Contact Form
-        Step 1: Sign Up for EmailJS
-        Go to the EmailJS website.
-        Sign up for a free account if you don't already have one.
+    Setting Up EmailJS for Contact Form
+    Step 1: Sign Up for EmailJS
+    Go to the EmailJS website.
+    Sign up for a free account if you don't already have one.
 
-        Step 2: Create an EmailJS Service
-        Once logged in, navigate to the "Email Services" section.
-        Click "Add new service" and follow the prompts to configure your email service. You will link it to your email provider (such as Gmail, Outlook, etc.).
+    Step 2: Create an EmailJS Service
+    Once logged in, navigate to the "Email Services" section.
+    Click "Add new service" and follow the prompts to configure your email service. 
+    You will link it to your email provider (such as Gmail, Outlook, etc.).
 
-        Step 3: Create an EmailJS Template
-        Go to the "Email Templates" section.
+    Step 3: Create an EmailJS Template
+    Go to the "Email Templates" section.
 
-        Step 4: Obtain Your EmailJS API Key
-        Go to the "Account" section (usually under your profile or settings).
-        You will find your User ID here, which acts as your API key.
+    Step 4: Obtain Your EmailJS API Key
+    Go to the "Account" section (usually under your profile or settings).
+    You will find your User ID here, which acts as your API key.
 
-        Step 5: Obtain Your Service ID and Template ID
-        Go to the "Email Services" section and select the service you created. Your Service ID will be listed there.
-        Go to the "Email Templates" section and select the template you created. Your Template ID will be listed there.
+    Step 5: Obtain Your Service ID and Template ID
+    Go to the "Email Services" section and select the service you created. Your Service ID will be listed there.
+    Go to the "Email Templates" section and select the template you created. Your Template ID will be listed there.
 
-        Integrating EmailJS with the Contact Form
-        Create configuration files:
-        You need to create three configuration files to store your EmailJS keys.
+    Integrating EmailJS with the Contact Form
+    Create configuration files:
+    You need to create three configuration files to store your EmailJS keys.
 
-        service_config.js:
-        export const serviceID = 'YOUR_SERVICE_ID';
+    service_config.js:
+    export const serviceID = 'YOUR_SERVICE_ID';
 
-        template_config.js:
-        export const templateID = 'YOUR_TEMPLATE_ID';
+    template_config.js:
+    export const templateID = 'YOUR_TEMPLATE_ID';
 
-        config.js:
-        export const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID';
+    config.js:
+    export const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID';
 
-        Include EmailJS script:
-        Make sure to include the EmailJS script in your HTML file:
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                emailjs.init('YOUR_EMAILJS_USER_ID');
-            })();
-        </script>
-    </div>
-</details>
+    Include EmailJS script:
+    Make sure to include the EmailJS script in your HTML file:
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('YOUR_EMAILJS_USER_ID');
+        })();
+    </script>
 
-<details>
-    <summary><strong>Example: script.js</strong></summary>
-    <pre><code>// Importing keys from separate config files
-import { serviceID } from './service_config.js';
-import { templateID } from './template_config.js';
-import { EMAILJS_USER_ID } from '../pages/config.js';
+    Example
+    Here is a brief overview of how the script.js file works:
+    // Importing keys from separate config files
+    import { serviceID } from './service_config.js';
+    import { templateID } from './template_config.js';
+    import { EMAILJS_USER_ID } from '../pages/config.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize EmailJS
-    emailjs.init(EMAILJS_USER_ID);
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize EmailJS
+        emailjs.init(EMAILJS_USER_ID);
 
-    // Attach the sendMail function to form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', validateForm);
-    }
-});
-</code></pre>
-</details>
+        // Attach the sendMail function to form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', validateForm);
+        }
+    });
 
 <script>
     function toggleInfo() {
@@ -88,4 +85,23 @@ document.addEventListener('DOMContentLoaded', () => {
         moreInfo.style.display = 'none';
       }
     }
-</script>
+     </script>
+
+    Usage
+    Open the contact form:
+    Navigate to the page with the contact form.
+    Fill out the form:
+    Enter your details and message.
+    Submit the form:
+    Click on the submit button to send the email.
+
+    Important Note:This method of sending emails is not secure. 
+    It exposes your API key and other sensitive information in the client-side code, 
+    which can be accessed by anyone visiting your site.For production applications, 
+    consider using a server-side solution to handle sensitive information securely.
+   </div>
+  </details>
+  
+
+    
+ 

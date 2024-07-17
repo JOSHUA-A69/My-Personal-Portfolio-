@@ -4,7 +4,8 @@
 
  <div id="moreInfo" style="display: none; padding-top: 20px;">
 
-    This portfolio is a continuous work in progress and will keep evolving as I improve my skills. Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
+    This portfolio is a continuous work in progress and will keep evolving as I improve my skills. 
+    Feel free to explore and provide feedback! For more details and updates, visit this portfolio repository.
 
     ⭐️ Star the Repo
     If you find this project helpful or interesting, please consider starring the repository! 
@@ -76,6 +77,7 @@
         }
     });
 
+<div id="moreInfo" style="display: none; padding-top: 20px;">
 <script>
     function toggleInfo() {
       var moreInfo = document.getElementById('moreInfo');
@@ -86,6 +88,7 @@
       }
     }
      </script>
+     </div>
 
     Usage
     Open the contact form:

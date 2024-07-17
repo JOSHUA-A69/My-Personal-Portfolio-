@@ -77,8 +77,9 @@
         }
     });
 
-<div id="moreInfo" style="display: none; padding-top: 20px;">
+
 <script>
+<div id="moreInfo" style="display: none; padding-top: 20px;">
     function toggleInfo() {
       var moreInfo = document.getElementById('moreInfo');
       if (moreInfo.style.display === 'none') {
@@ -87,8 +88,9 @@
         moreInfo.style.display = 'none';
       }
     }
+    </div>
      </script>
-     </div>
+    
 
     Usage
     Open the contact form:

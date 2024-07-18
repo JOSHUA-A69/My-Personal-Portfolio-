@@ -975,14 +975,16 @@ header.scrolled {
 }
 
 /* Set specific widths for progress bars */
-.html .progress-per { width: 75%; }
-.css .progress-per { width: 65%; }
-.js .progress-per { width: 60%; }
-.c .progress-per { width: 59%; }
-.sql .progress-per { width: 60%; }
+.html .progress-per { width: 80%; }
+.css .progress-per { width: 75%; }
+.js .progress-per { width: 65%; }
+.c .progress-per { width: 65%; }
+.sql .progress-per { width: 65%; }
 .php .progress-per { width: 35%; }
-.github .progress-per { width: 75%; }
-.git .progress-per { width: 50%; }
+.github .progress-per { width: 80%; }
+.git .progress-per { width: 65%; }
+.bootstrap .progress-per {width: 45%; }
+.nodejs .progress-per {width: 35%; }
 .communication .progress-per { width: 79%; }
 .team-work .progress-per { width: 90%; }
 .management .progress-per { width: 89%; }

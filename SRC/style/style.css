@@ -946,7 +946,7 @@ header.scrolled {
     color: var(--text-color);
 }
 
-.progress-block {
+/*.progress-block {
     width: fit-content;
     height: fit-content;
     padding: 0 5px;
@@ -972,9 +972,9 @@ header.scrolled {
     height: 100%;
     border-radius: 20px;
     background-color: var(--main-color);
-}
+}*\
 
-/* Set specific widths for progress bars */
+/* 
 .html .progress-per { width: 80%; }
 .css .progress-per { width: 75%; }
 .js .progress-per { width: 65%; }
@@ -988,7 +988,7 @@ header.scrolled {
 .communication .progress-per { width: 79%; }
 .team-work .progress-per { width: 90%; }
 .management .progress-per { width: 89%; }
-.creativity .progress-per { width: 65%; }
+.creativity .progress-per { width: 65%; } */
 
 .block-header {
     color: var(--text-color);

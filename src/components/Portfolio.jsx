@@ -12,7 +12,7 @@ const Portfolio = () => {
                     <div className="portfolio-layer">
                         <h4>RyoukouTravel</h4>
                         <p>a Travel blog website for Bohol Philippines, appreciating on Bohol's most overlooked tourist attractions.</p>
-                        <a href="https://joshua-a69.github.io/RyoukouTravel-website-School-Project/LogInPage.html"><i className='bx bx-link-external'></i></a>
+                        <a href="https://joshua-a69.github.io/RyoukouTravel-website-School-Project/LogInPage.html"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">
@@ -20,7 +20,7 @@ const Portfolio = () => {
                     <div className="portfolio-layer">
                         <h4>e-Commerce Website</h4>
                         <p>Front-end e-Commerce Website</p>
-                        <a href="https://joshua-a69.github.io/School-Project-eCom-Website/index.html"><i className='bx bx-link-external'></i></a>
+                        <a href="https://joshua-a69.github.io/School-Project-eCom-Website/index.html"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">
@@ -28,7 +28,7 @@ const Portfolio = () => {
                     <div className="portfolio-layer">
                         <h4>My GitHub Repositories</h4>
                         <p>Feel free to explore my GitHub repositories where you can find most of my showcase projects.</p>
-                        <a href="https://github.com/JOSHUA-A69?tab=repositories"><i className='bx bx-link-external'></i></a>
+                        <a href="https://github.com/JOSHUA-A69?tab=repositories"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
             </div>

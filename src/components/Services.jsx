@@ -8,7 +8,7 @@ const Services = () => {
             <h2 className="heading">My <span>Services</span></h2>
             <div className="services-container">
                 <div className="services-box">
-                    <i className='bx bx-code-alt'></i>
+                    <i className='fas fa-code'></i>
                     <h3>Web Development</h3>
                     <p> with experience in creating custom websites.
                     Strong collaboration skills and a proven history with web development.

@@ -35,8 +35,8 @@ const Home = () => {
                 <h1>Joshua</h1>
                 <h3>And I'm  <span className="multiple-text"></span></h3>
                 <div className="social-media">
-                    <a href="https://github.com/JOSHUA-A69"><i className=''></i></a>
-                    <a href="https://www.linkedin.com/in/joshua-russel-uy-a9b024243/"><i className=''></i></a>
+                    <a href="https://github.com/JOSHUA-A69"><i className='fab fa-github'></i></a>
+                    <a href="https://www.linkedin.com/in/joshua-russel-uy-a9b024243/"><i className='fab fa-linkedin'></i></a>
                 </div>
                 <a href="" className="btn">Check CV</a>
             </div>

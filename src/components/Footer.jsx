@@ -10,7 +10,7 @@ const Footer = () => {
                 <p>Copyright &copy; 2024 by Joshua Russel Uy | All Rights Reserved.</p>
             </div>
             <div className="footer-iconTop">
-                <a href="#home"><i className='bx bx-up-arrow-alt'></i></a>
+                <a href="#home"><i className='fas fa-arrow-up'></i></a>
             </div>
         </footer>
     );

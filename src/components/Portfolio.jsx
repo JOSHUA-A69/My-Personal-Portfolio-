@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Portfolio = () => {
     return (

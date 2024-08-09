@@ -1,6 +1,6 @@
 import React from 'react';
 import './services.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Services = () => {
     return (
@@ -10,9 +10,13 @@ const Services = () => {
                 <div className="services-box">
                     <i className='bx bx-code-alt'></i>
                     <h3>Web Development</h3>
-                    <p> with experience in creating custom websites.Strong collaboration skills and a proven history with web development.</p>
+                    <p> with experience in creating custom websites.
+                    Strong collaboration skills and a proven history with web development.
+                        
+                    </p>
                     <p>
-                    I specialize in frontend technologies, including HTML, CSS, JavaScript, React, and Bootstrap, and I use libraries such as Redux and jQuery. For backend development, I work with Node.js, PHP, and SQL. Additionally, I am proficient in tools like Git and GitHub and have a familiarity with the C programming language.
+                    I specialize in frontend technologies, including HTML, CSS, JavaScript, React, and Bootstrap, and I use libraries such as Redux and jQuery. 
+                    For backend development, I work with Node.js, PHP, and SQL. Additionally, I am proficient in tools like Git and GitHub and have a familiarity with the C programming language.
                     </p>
                 </div>
                 <div className="services-box">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const About = () => {
     return (

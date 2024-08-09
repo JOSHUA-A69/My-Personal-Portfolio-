@@ -1,4 +1,3 @@
-/* General Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -10,18 +9,18 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Sticky Header */
+
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color:rgb(17,33,58); 
     color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar Styles */
+
 .navbar {
     display: flex;
     gap: 20px;
@@ -36,16 +35,16 @@ header {
 }
 
 .navbar a:hover {
-    color: #007bff;
+    color:#A6E22E;
 }
 
-/* Active Link Styles */
+
 .navbar a.active {
-    color: #007bff;
+    color: #A6E22E;
     font-weight: bold;
 }
 
-/* Active Navbar when toggled */
+
 .navbar.active {
     display: block;
     position: absolute;
@@ -56,7 +55,7 @@ header {
     border-radius: 5px;
 }
 
-/* Menu Icon Styles */
+
 #menu-icon {
     font-size: 24px;
     color: #333;
@@ -64,12 +63,12 @@ header {
     cursor: pointer;
 }
 
-/* Menu Icon when toggled */
+
 #menu-icon.bx-x {
-    color: #007bff;
+    color: #A6E22E;
 }
 
-/* Media Query for Mobile View */
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -95,6 +94,9 @@ header {
     }
 
     .navbar a:hover {
-        color: #007bff;
+        color: #A6E22E;
     }
 }
+
+
+

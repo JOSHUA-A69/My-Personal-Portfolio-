@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navabar.css';
 
-
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
 
@@ -14,16 +13,18 @@ const Navbar = () => {
         const navLinks = document.querySelectorAll('header nav a');
 
         const onScroll = () => {
-            sections.forEach(sec => {
+            sections.forEach((sec) => {
                 let top = window.scrollY;
                 let offset = sec.offsetTop - 150;
                 let height = sec.offsetHeight;
                 let id = sec.getAttribute('id');
 
                 if (top >= offset && top < offset + height) {
-                    navLinks.forEach(link => {
+                    navLinks.forEach((link) => {
                         link.classList.remove('active');
-                        document.querySelector(`header nav a[href*="${id}"]`).classList.add('active');
+                        document
+                            .querySelector(`header nav a[href*="${id}"]`)
+                            .classList.add('active');
                     });
                 }
             });
@@ -38,7 +39,9 @@ const Navbar = () => {
 
     return (
         <header>
-            <div id="menu-icon" onClick={handleMenuClick} className={isActive ? 'bx-x' : ''}></div>
+            <div id="menu-icon" onClick={handleMenuClick} className={isActive ? 'bx-x' : ''}>
+                <i className={`bx ${isActive ? 'bx-x' : 'bx-menu'}`}></i>
+            </div>
             <nav className={isActive ? 'active navbar' : 'navbar'}>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>

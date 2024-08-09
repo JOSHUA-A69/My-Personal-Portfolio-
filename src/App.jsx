@@ -21,6 +21,7 @@ import './components/navabar.css';
 const App = () => {
     return (
         <>
+            <Navbar />
             <Header />
             <Home />
             <About />

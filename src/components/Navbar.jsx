@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navabar.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);

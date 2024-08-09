@@ -1,5 +1,6 @@
 import React from 'react';
 import './contact.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
   return (

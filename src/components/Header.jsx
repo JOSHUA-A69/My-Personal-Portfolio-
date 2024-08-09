@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const Header = () => {
     return (
         <header className="header">

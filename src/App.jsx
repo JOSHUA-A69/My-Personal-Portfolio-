@@ -15,7 +15,7 @@ import './components/services.css';
 import './components/portfolio.css';
 import './components/footer.css';
 import './components/contact.css';
-import './components/navabar.css';
+import './components/navbar.css';
 
 
 const App = () => {

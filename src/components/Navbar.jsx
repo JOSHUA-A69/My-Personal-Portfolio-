@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './navabar.css';
+import './navbar.css';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);

@@ -16,7 +16,7 @@ const Services = () => {
                     </p>
                     <p>
                     I specialize in frontend technologies, including HTML, CSS, JavaScript, React, and Bootstrap, and I use libraries such as Redux and jQuery. 
-                    For backend development, I work with Node.js, PHP, and SQL. Additionally, I am proficient in tools like Git and GitHub and have a familiarity with the C programming language.
+                    For backend development, I work with Node.js, PHP, and SQL. Additionally, I am proficient in tools like Git,GitHub,and NPM and have a familiarity with the C programming language.
                     </p>
                 </div>
                 <div className="services-box">

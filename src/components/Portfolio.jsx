@@ -16,6 +16,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+
                 {/* 
                 <div className="portfolio-box">
                     <img src="https://i.postimg.cc/rFZZbns8/Header.png" alt="RyoukouTravel"/>
@@ -34,6 +35,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 */}
+                
                 
         </section>
     );

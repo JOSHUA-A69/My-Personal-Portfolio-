@@ -3,9 +3,11 @@ import './portfolio.css';
 
 const Portfolio = () => {
     return (
+       
         <section className="portfolio" id="portfolio">
             <h2 className="heading">Latest <span>Project</span></h2>
             <div className="portfolio-container">
+                 {/*
                 <div className="portfolio-box">
                     <img src="https://i.postimg.cc/pXWcKbQB/coming-soon.png" alt="coming soon" />
                     <div className="portfolio-layer">
@@ -22,6 +24,7 @@ const Portfolio = () => {
                         <a href=""><i className='fas fa-link'></i></a>
                     </div>
                 </div>
+                */}
                 <div className="portfolio-box">
                     <img src="https://i.postimg.cc/DzqZyfC5/github-logo.png" alt="github" />
                     <div className="portfolio-layer">

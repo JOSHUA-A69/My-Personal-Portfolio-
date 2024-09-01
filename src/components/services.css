@@ -40,3 +40,17 @@
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+.services .logos {
+    display: flex;
+    justify-content: center; /* Center the logos */
+    flex-wrap: wrap; /* Allow logos to wrap to the next line */
+    margin-top: 10px; /* Space between the text and logos */
+}
+
+.services .logos img {
+    margin: 5px; /* Space around each logo */
+    height: 40px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+

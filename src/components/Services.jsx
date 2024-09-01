@@ -38,11 +38,6 @@ const Services = () => {
                         <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
                     </div>
                 </div>
-                <div className="services-box">
-                    <i className='fas fa-pencil-ruler'></i>
-                    <h3>UI/UX</h3>
-                    <p>UI/UX Designer with a great passion for good designs. The main goal is to always create modern, attractive, and user-friendly interfaces and find creative and simple solutions for your business.</p>
-                </div>
             </div>
         </section>
     );

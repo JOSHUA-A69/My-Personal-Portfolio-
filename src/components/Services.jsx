@@ -11,7 +11,7 @@ const Services = () => {
                     <h3>Web Development</h3>
                     <p>With experience in creating custom websites.
                         Strong collaboration skills and a proven history with web development.
-                        I'm both capable of Back-End and Front-End especially in the Front-End side of things.
+                        I'm both capable of Back end and Front end especially in the Front-End side of things.
                     </p>
                 </div>
                 <div className="services-box">

@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section className="about" id="about">
             <div className="about-img">
-                <img src="https://i.postimg.cc/HW7r5fg5/435397787-434941355886389-7641357581127868885-n.jpg" alt="Personal-Pic" />
+                <img src="../img/Personal Pic.jpg" alt="Personal-Pic" />
             </div>
             
             <div className="about-content">

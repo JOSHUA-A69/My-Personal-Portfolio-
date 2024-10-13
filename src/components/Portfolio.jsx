@@ -8,7 +8,7 @@ const Portfolio = () => {
             <h2 className="heading">Latest <span>Project</span></h2>
             <div className="portfolio-container">
                 <div className="portfolio-box">
-                    <img src="https://i.postimg.cc/pXWcKbQB/coming-soon.png" alt="coming soon" />
+                    <img src="../img/coming-soon.png" alt="coming soon" />
                     <div className="portfolio-layer">
                         <h4>Coming Soon</h4>
                         <p>coming soon</p>
@@ -16,7 +16,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-box">
-                    <img src="https://i.postimg.cc/pXWcKbQB/coming-soon.png" alt="coming soon" />
+                    <img src="../img/coming-soon.png" alt="coming soon" />
                     <div className="portfolio-layer">
                         <h4>Coming Soon</h4>
                         <p>coming soon</p>
@@ -24,7 +24,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-box">
-                    <img src="https://i.postimg.cc/DzqZyfC5/github-logo.png" alt="github" />
+                    <img src="../img/GitHub.png" alt="github" />
                     <div className="portfolio-layer">
                         <h4>My GitHub Repositories</h4>
                         <p>Feel free to explore my GitHub repositories where you can find most of my showcase projects.</p>

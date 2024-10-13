@@ -38,7 +38,7 @@ const Home = () => {
                     <a href="https://github.com/JOSHUA-A69"><i className='fab fa-github'></i></a>
                     <a href="https://www.linkedin.com/in/joshua-russel-uy-a9b024243/"><i className='fab fa-linkedin'></i></a>
                 </div>
-                <a href="" className="btn">Check CV</a>
+                <a href="../Resume/Joshua_Russel_Uy_Resume.pdf" className="btn">Check Resume</a>
             </div>
             <div className="home-img">
                 <img src="" alt="" />

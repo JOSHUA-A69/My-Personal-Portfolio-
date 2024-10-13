@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section className="about" id="about">
             <div className="about-img">
-                <img src="../img/Personal Pic.jpg" alt="Personal-Pic" />
+            <img src={require('../img/ME.png')} alt="Personal-Pic" />
             </div>
             
             <div className="about-content">

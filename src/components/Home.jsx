@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
 import './home.css';
+import resume from '../Resume/Joshua_Russel_Uy_Resume.pdf';
 
 
 
@@ -38,7 +39,7 @@ const Home = () => {
                     <a href="https://github.com/JOSHUA-A69"><i className='fab fa-github'></i></a>
                     <a href="https://www.linkedin.com/in/joshua-russel-uy-a9b024243/"><i className='fab fa-linkedin'></i></a>
                 </div>
-                <a href="../Resume/Joshua_Russel_Uy_Resume.pdf" className="btn">Check Resume</a>
+                <a href={resume} className="btn" target="_blank" rel="noopener noreferrer">Check Resume</a>
             </div>
             <div className="home-img">
                 <img src="" alt="" />

@@ -1,7 +1,7 @@
 <h1 align="center">My React Portfolio</h1>
 
 <p align="center">
-  <img src="public/logo/ME.png" alt="React Portfolio Logo" width="200px">
+  <img src="public/logo/About ME pic.png" alt="React Portfolio Logo" width="200px">
 </p>
 
 <p align="center">

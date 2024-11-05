@@ -16,7 +16,7 @@ const Home = () => {
 
         // Typed.js initialization
         const typed = new Typed('.multiple-text', {
-            strings: [' a Web Developer','specializing in Front End development'],
+            strings: [' a Web Developer','specializing in both Front End development and Back End development'],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

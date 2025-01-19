@@ -43,7 +43,7 @@ const Services = () => {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="40" height="40" alt="MariaDB" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40" alt="PHP" />
-                    <img src="https://i.postimg.cc/BvCKXKVr/logo-laravel-icon-1024.png" width="40" height="40" alt="Laravel" />
+                    <img src={require('../img/logo-laravel-icon-1024.png')} width="40" height="40" alt="Laravel" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" alt="C Language" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" alt="GitHub" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="Visual Studio Code" />

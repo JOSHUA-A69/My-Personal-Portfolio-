@@ -9,10 +9,10 @@ const Services = () => {
                 {/* Web Development Service */}
                 <div className="services-box">
                     <i className="fas fa-code"></i>
-                    <h3>Web Development</h3>
+                    <h3>Full Stack Development</h3>
                     <p>
-                        With experience in creating custom websites. 
-                        Strong collaboration skills and a proven history with web development. 
+                        With experience in creating programs. 
+                        Strong collaboration skills and a proven history with full stack development. 
                         I'm both capable of Back end and Front end.
                     </p>
                 </div>
@@ -45,6 +45,7 @@ const Services = () => {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40" alt="PHP" />
                     <img src={require('../img/logo-laravel-icon-1024.png')} width="40" height="40" alt="Laravel" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" alt="C Language" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" alt="GitHub" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="Visual Studio Code" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git" />
@@ -54,6 +55,7 @@ const Services = () => {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" width="40" height="40" alt="Netlify" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" width="40" height="40" alt="Vercel" />
                     <img src="https://getcomposer.org/img/logo-composer-transparent.png" width="40" height="40" alt="Composer" />
+                    <img src={require('../img/Cursor.jpg')} width="40" height="40" alt="Cursor AI" />
                 </div>
             </div>
         </section>

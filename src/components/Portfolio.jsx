@@ -16,14 +16,6 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-box">
-                <img src={require('../img/Rock, Paper, Scissors Game.png')} alt="pic" />
-                    <div className="portfolio-layer">
-                        <h4>Rock, Paper, Scissors Game</h4>
-                        <p>The Rock Paper Scissors Game is a simple interactive web app where a user plays against the computer.</p>
-                        <a href="https://joshua-a69.github.io/Rock-Paper-Scissors-Game/RockPaperScissors.html"><i className='fas fa-link'></i></a>
-                    </div>
-                </div>
-                <div className="portfolio-box">
                 <img src={require('../img/Screenshot 2024-04-30 125359.png')} alt="pic" />
                     <div className="portfolio-layer">
                         <h4>RyoukouTravel</h4>
@@ -37,6 +29,14 @@ const Portfolio = () => {
                         <h4>Weather app</h4>
                         <p>The Weather App is a web application designed to provide users with real-time weather information for any location.</p>
                         <a href="https://github.com/JOSHUA-A69/Weather-site"><i className='fas fa-link'></i></a>
+                    </div>
+                </div>
+                <div className="portfolio-box">
+                <img src={require('../img/To-Do.png')} alt="pic" />
+                    <div className="portfolio-layer">
+                        <h4>TO-DO List</h4>
+                        <p>A simple CRUD To-Do List web application built with Laravel.</p>
+                        <a href="https://github.com/JOSHUA-A69/Simple-To-do"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">

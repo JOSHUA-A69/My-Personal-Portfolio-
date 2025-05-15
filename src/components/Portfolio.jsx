@@ -8,23 +8,15 @@ const Portfolio = () => {
             <h2 className="heading">Latest <span>Project</span></h2>
             <div className="portfolio-container">
                 <div className="portfolio-box">
-                <img src={require('../img/Calorie Counter .png')} alt="pic" />
+                    <img src={require('../img/Undead Siege .png')} alt="pic" />
                     <div className="portfolio-layer">
-                        <h4>Calorie Counter</h4>
-                        <p>This Calorie Counter project is a simple web app designed to help users manage their daily calorie intake and expenditure.</p>
-                        <a href="https://joshua-a69.github.io/Calorie-Counter/CalorieCounter.html"><i className='fas fa-link'></i></a>
+                        <h4>Undead Siege</h4>
+                        <p>A top-down zombie shooter made using pygame where you fight against endless hordes of undead with different weapons and power-ups.</p>
+                        <a href="https://github.com/JOSHUA-A69/Undead-Siege/releases/tag/Major(1)"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">
-                <img src={require('../img/Screenshot 2024-04-30 125359.png')} alt="pic" />
-                    <div className="portfolio-layer">
-                        <h4>RyoukouTravel</h4>
-                        <p>A Travel blog website for Bohol Philippines, appreciating on Bohol's most overlooked tourist attractions.</p>
-                        <a href="https://joshua-a69.github.io/RyoukouTravel-website-School-Project/LogInPage.html"><i className='fas fa-link'></i></a>
-                    </div>
-                </div>
-                <div className="portfolio-box">
-                <img src={require('../img/Weather app.png')} alt="pic" />
+                    <img src={require('../img/Weather app.png')} alt="pic" />
                     <div className="portfolio-layer">
                         <h4>Weather app</h4>
                         <p>The Weather App is a web application designed to provide users with real-time weather information for any location.</p>
@@ -32,15 +24,23 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-box">
-                <img src={require('../img/To-Do.png')} alt="pic" />
+                    <img src={require('../img/Screenshot 2024-04-30 125359.png')} alt="pic" />
                     <div className="portfolio-layer">
-                        <h4>TO-DO List</h4>
-                        <p>A simple CRUD To-Do List web application built with Laravel.</p>
-                        <a href="https://github.com/JOSHUA-A69/Simple-To-do"><i className='fas fa-link'></i></a>
+                        <h4>RyoukouTravel</h4>
+                        <p>A Travel blog website for Bohol Philippines, appreciating on Bohol's most overlooked tourist attractions.</p>
+                        <a href="https://joshua-a69.github.io/RyoukouTravel-website-School-Project/LogInPage.html"><i className='fas fa-link'></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">
-                <img src={require('../img/Options Page .png')} alt="pic" />
+                    <img src={require('../img/Calorie Counter .png')} alt="pic" />
+                    <div className="portfolio-layer">
+                        <h4>Calorie Counter</h4>
+                        <p>This Calorie Counter project is a simple web app designed to help users manage their daily calorie intake and expenditure.</p>
+                        <a href="https://joshua-a69.github.io/Calorie-Counter/CalorieCounter.html"><i className='fas fa-link'></i></a>
+                    </div>
+                </div>
+                <div className="portfolio-box">
+                    <img src={require('../img/Options Page .png')} alt="pic" />
                     <div className="portfolio-layer">
                         <h4>Divine Sushi Shop Ordering System </h4>
                         <p>A web-based CRUD application designed to streamline operations for a sushi shop.</p>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-box">
-                <img src={require('../img/GitHub.png')} alt="github" />
+                    <img src={require('../img/GitHub.png')} alt="github" />
                     <div className="portfolio-layer">
                         <h4>My GitHub Repositories</h4>
                         <p>Feel free to explore my GitHub repositories where you can find most of my showcase projects.</p>
@@ -59,6 +59,5 @@ const Portfolio = () => {
         </section>
     );
 }
-
 
 export default Portfolio;

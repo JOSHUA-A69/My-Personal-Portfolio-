@@ -19,7 +19,7 @@ const Portfolio = () => {
                     <img src={require('../img/Weather app.png')} alt="pic" />
                     <div className="portfolio-layer">
                         <h4>Weather app</h4>
-                        <p>The Weather App is a web application designed to provide users with real-time weather information for any location.</p>
+                        <p> A web application designed to provide users with real-time weather information for any location.</p>
                         <a href="https://github.com/JOSHUA-A69/Weather-site"><i className='fas fa-link'></i></a>
                     </div>
                 </div>

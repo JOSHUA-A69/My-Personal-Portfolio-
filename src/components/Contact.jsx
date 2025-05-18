@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -32,7 +34,7 @@ const Contact = () => {
 
         // Email validation: must contain @
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-            newErrors.email = 'Please enter a valid email address with "@" symbol.';
+            newErrors.email = 'Please enter a valid email address.';
             valid = false;
         }
 
@@ -42,9 +44,9 @@ const Contact = () => {
             valid = false;
         }
 
-        // Email subject validation: must contain @
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.subject)) {
-            newErrors.subject = 'Email subject must contain a valid email format.';
+        // Subject validation: should not be empty
+        if (formData.subject.trim() === '') {
+            newErrors.subject = 'Subject field cannot be empty.';
             valid = false;
         }
 
@@ -65,26 +67,37 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (validateForm()) {
-            setSubmitStatus('Form submitted successfully!');
-            console.log('Form submitted successfully:', formData);
-            // Clear form data if desired
-            setFormData({
-                name: '',
-                email: '',
-                mobile: '',
-                subject: '',
-                message: ''
+          if (validateForm()) {
+            emailjs.sendForm(
+                'service_zhhony5', 
+                'template_xob7odg', 
+                form.current,
+                'btT7U8uvjfNvjmZzg' 
+            )
+            .then((result) => {
+                setSubmitStatus('Message sent successfully!');
+                // Clear form
+                setFormData({
+                    name: '',
+                    email: '',
+                    mobile: '',
+                    subject: '',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                setSubmitStatus('Failed to send message. Please try again.');
+                console.error('EmailJS Error:', error);
             });
         } else {
-            setSubmitStatus('Form submission failed. Please correct the errors and try again.');
+            setSubmitStatus('Please correct the errors and try again.');
         }
     };
 
     return (
         <section className="contact" id="contact">
             <h2 className="heading">Contact<span>ME!</span></h2>
-            <form onSubmit={handleSubmit} name="submit-to-google-sheet">
+            <form ref={form} onSubmit={handleSubmit} name="submit-to-google-sheet">
                 <div className="input-box">
                     <input
                         type="text"

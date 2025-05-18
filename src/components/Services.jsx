@@ -32,8 +32,8 @@ const Services = () => {
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg", alt: "Command Line" },
             { src: require('../img/XAMPP_logo.png'), alt: "XAMPP" },
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", alt: "npm" },
-            { src: "https://getcomposer.org/img/logo-composer-transparent.png", alt: "Composer" },
-            { src: require('../img/Cursor.jpg'), alt: "Cursor AI" }
+            { src: "https://getcomposer.org/img/logo-composer-transparent.png", alt: "Composer" },            { src: require('../img/Cursor.jpg'), alt: "Cursor AI" },
+            { src: require('../img/GitHub-Copilot-logo-1040x650.png'), alt: "GitHub Copilot" }
         ],
         Deployment: [
             { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg", alt: "Netlify" },

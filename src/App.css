@@ -12,11 +12,8 @@
 
  }
 
- :root {
-    --bg-color: rgb(17,33,58);
-    --second-bg-color: rgb(17,33,58);
-    --text-color:#fff;
-    --main-color: #A6E22E;
+/* Use global dark theme variables from index.css */
+:root{}
    }
 
  html{
@@ -26,7 +23,7 @@
  }
 
  body{
-    background: var(--bg-color);
+   background: var(--bg-color);
     color: var(--text-color);
  }
 
@@ -40,7 +37,7 @@
     left:0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+   background: var(--bg-color);
     display: flex;
     justify-content:space-between;
     align-items: center;

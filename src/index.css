@@ -5,9 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #e6e6e6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Default accent color if not set elsewhere */
+:root {
+  --bg-color: #000;
+  --second-bg-color: #0f1115;
+  --text-color: #e6e6e6;
+  --main-color: #A6E22E; /* revert to green accent for text & hovers */
 }

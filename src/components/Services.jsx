@@ -2,42 +2,27 @@ import React, { useState } from 'react';
 import './services.css';
 
 const Services = () => {
-    const [activeTab, setActiveTab] = useState('Frontend');
+    const [activeTab, setActiveTab] = useState('Stack');
 
     const categories = {
-        Frontend: [
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
-            { src: "https://raw.githubusercontent.com/CSS-Next/logo.css/main/css.svg", alt: "CSS" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg", alt: "jQuery" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg", alt: "Redux" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", alt: "Bootstrap" }
-        ],
-        Backend: [
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", alt: "Node.js" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", alt: "PHP" },
-            { src: require('../img/logo-laravel-icon-1024.png'), alt: "Laravel" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", alt: "C Language" }
-        ],
-        Databases: [
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", alt: "MySQL" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg", alt: "MariaDB" }
-        ],
-        "Development Tools": [
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", alt: "GitHub" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", alt: "Visual Studio Code" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg", alt: "Command Line" },
-            { src: require('../img/XAMPP_logo.png'), alt: "XAMPP" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", alt: "npm" },
-            { src: "https://getcomposer.org/img/logo-composer-transparent.png", alt: "Composer" },            { src: require('../img/Cursor.jpg'), alt: "Cursor AI" },
-            { src: require('../img/GitHub-Copilot-logo-1040x650.png'), alt: "GitHub Copilot" }
-        ],
-        Deployment: [
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg", alt: "Netlify" },
-            { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", alt: "Vercel" }
+        Stack: [
+            { icon: 'devicon-html5-plain colored', alt: 'HTML' },
+            { icon: 'devicon-css3-plain colored', alt: 'CSS' },
+            { icon: 'devicon-javascript-plain colored', alt: 'JavaScript' },
+            { icon: 'devicon-react-original colored', alt: 'React' },
+            { icon: 'devicon-bootstrap-plain colored', alt: 'Bootstrap' },
+            { icon: 'devicon-nodejs-plain colored', alt: 'Node.js' },
+            { icon: 'devicon-php-plain colored', alt: 'PHP' },
+            { icon: 'devicon-laravel-plain colored', alt: 'Laravel' },
+            { icon: 'devicon-python-plain colored', alt: 'Python' },
+            { icon: 'devicon-c-plain colored', alt: 'C' },
+            { icon: 'devicon-mysql-plain colored', alt: 'MySQL' },
+            { icon: 'devicon-git-plain colored', alt: 'Git' },
+            { icon: 'devicon-github-original colored', alt: 'GitHub' },
+            { icon: 'devicon-vscode-plain colored', alt: 'VS Code' },
+            { icon: 'devicon-npm-original-wordmark colored', alt: 'npm' },
+            { icon: 'devicon-docker-plain colored', alt: 'Docker' },
+            { icon: 'devicon-vercel-original colored', alt: 'Vercel' }
         ]
     };
 
@@ -65,33 +50,39 @@ const Services = () => {
                         I excel at generating valuable insights to inform business decisions.
                     </p>
                 </div>
+
+                {/* DevOps Service */}
+                <div className="services-box">
+                    <i className="fa-solid fa-gears"></i>
+                    <h3>DevOps & Deployment</h3>
+                    <p>
+                        CI/CD and containerized workflows using Git/GitHub, Docker, and modern hosting like Vercel. 
+                        Focused on reliable releases, observability, and smooth handoffs from development to production.
+                    </p>
+                </div>
+
+                {/* System Management Service */}
+                <div className="services-box">
+                    <i className="fa-solid fa-server"></i>
+                    <h3>System Management</h3>
+                    <p>
+                        Practical administration across Windows and Linux: environment setup, configuration, and maintenance. 
+                        Emphasis on security, backups, and performance tuning for stable operations.
+                    </p>
+                </div>
             </div>
 
             {/* Tech Stacks Section */}
             <div className="techstacks">
-                <h2 className="heading">My <span>Tech Stacks</span></h2>
+                <h2 className="heading"><span>Tech Stacks</span></h2>
                 <div className="tech-container">
-                    <div className="tech-tabs">
-                        {Object.keys(categories).map((category) => (
-                            <button
-                                key={category}
-                                className={`tech-tab ${activeTab === category ? 'active' : ''}`}
-                                onClick={() => setActiveTab(category)}
-                            >
-                                {category}
-                            </button>
-                        ))}
-                    </div>
+                    {/* Tabs hidden since only one category */}
                     <div className="tech-content">
                         <div className="techstacks-icons">
                             {categories[activeTab].map((tech, index) => (
-                                <img
-                                    key={index}
-                                    src={tech.src}
-                                    alt={tech.alt}
-                                    title={tech.alt}                                    width="60"
-                                    height="60"
-                                />
+                                <span className={`tech-icon ${tech.alt.toLowerCase()}`} key={index} title={tech.alt} aria-label={tech.alt}>
+                                    <i className={tech.icon}></i>
+                                </span>
                             ))}
                         </div>
                     </div>

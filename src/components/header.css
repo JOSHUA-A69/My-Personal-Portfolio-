@@ -6,11 +6,21 @@
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: linear-gradient(180deg, #0a0b0d 0%, #0e1014 100%);
+    backdrop-filter: saturate(120%) blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 1px 0 rgba(166,226,46,0.15);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
     z-index: 100;
+}
+
+/* Ensure navbar sits on its own row under the logo */
+.header .navbar {
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
 .header.sticky {
@@ -24,16 +34,34 @@
     cursor: default;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin-left: 4rem;
-    transition: .3s;
+    margin-right: 3rem;
+    transition: .3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+}
+
+/* Active underline indicator for clearer nav state */
+.navbar a.active {
+    position: relative;
+}
+.navbar a.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
 }
 
 #menu-icon {

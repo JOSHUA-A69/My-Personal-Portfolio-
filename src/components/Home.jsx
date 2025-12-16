@@ -15,8 +15,10 @@ const Home = () => {
         ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
         // Typed.js initialization
-        const typed = new Typed('.multiple-text', {
-            strings: ['Specializing in both Front End development and Back End development','a Data Analyst'],
+            const typed = new Typed('.multiple-text', {
+                strings: [
+                    " a full-stack developer and IT specialist building scalable, user‑centric systems"
+                ],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

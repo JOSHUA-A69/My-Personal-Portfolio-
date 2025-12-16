@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './header.css';
 import './navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -8,46 +10,32 @@ const Navbar = () => {
         setIsActive(!isActive);
     };
 
+    // Restore sticky header behavior like before
     useEffect(() => {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('header nav a');
-
         const onScroll = () => {
-            sections.forEach((sec) => {
-                let top = window.scrollY;
-                let offset = sec.offsetTop - 150;
-                let height = sec.offsetHeight;
-                let id = sec.getAttribute('id');
-
-                if (top >= offset && top < offset + height) {
-                    navLinks.forEach((link) => {
-                        link.classList.remove('active');
-                        document
-                            .querySelector(`header nav a[href*="${id}"]`)
-                            .classList.add('active');
-                    });
-                }
-            });
-
-            const header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 100);
+            const header = document.querySelector('.header');
+            if (header) {
+                header.classList.toggle('sticky', window.scrollY > 100);
+            }
         };
-
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
+    // Active class handled by NavLink
+
     return (
-        <header>
-            <div id="menu-icon" onClick={handleMenuClick} className={isActive ? 'bx-x' : ''}>
+        <header className="header">
+            <a href="/" className="logo">Personal Portfolio</a>
+            <div id="menu-icon" onClick={handleMenuClick}>
                 <i className={`bx ${isActive ? 'bx-x' : 'bx-menu'}`}></i>
             </div>
             <nav className={isActive ? 'active navbar' : 'navbar'}>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>ABOUT</NavLink>
+                <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>SERVICES</NavLink>
+                <NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active' : ''}>PORTFOLIO</NavLink>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>CONTACT</NavLink>
             </nav>
         </header>
     );

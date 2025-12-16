@@ -1,7 +1,7 @@
 /* Portfolio.css */
 
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -10,7 +10,7 @@
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
     gap: 2.5rem;
     max-width: 1200px;
@@ -20,10 +20,10 @@
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    outline: 1px solid rgba(255,255,255,0.08);
     overflow: hidden;
     display: flex;
-    aspect-ratio: 16/9;
+    height: 320px; /* make boxes big enough, similar to services */
 }
 
 .portfolio-box img {
@@ -43,7 +43,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
+    background: linear-gradient(rgba(0,0,0, .35), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;

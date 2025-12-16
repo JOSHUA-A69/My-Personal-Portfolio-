@@ -1,20 +1,2 @@
-import React from 'react';
-import './header.css';
-
-const Header = () => {
-    return (
-        <header className="header">
-            <a href="#" className="logo">Personal Portfolio</a>
-            <i className='bx bx-menu' id="menu-icon"></i>
-            <nav className="navbar">
-                <a href="#home" className="active">Home</a>
-                <a href="#about">ABOUT</a>
-                <a href="#services">SERVICES</a>
-                <a href="#portfolio">PORTFOLIO</a>
-                <a href="#contact">CONTACT</a>
-            </nav>
-        </header>
-    );
-}
-
-export default Header;
+// Header replaced by page-based Navbar; keeping file for reference or future use.
+export default function Header() { return null; }

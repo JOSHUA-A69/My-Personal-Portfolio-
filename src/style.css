@@ -13,12 +13,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --bg-color: rgb(17,33,58);
-    --second-bg-color: rgb(17,33,58);
-    --text-color: #fff;
-    --main-color: #A6E22E;
-}
+/* Inherit global dark theme variables from index.css */
 
 html {
     font-size: 62.5%;
@@ -29,6 +24,41 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/* Shared container for consistent alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Standard section rhythm */
+.page-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Page enter animations */
+@keyframes fade-in-up {
+    0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up .6s ease-out both;
+}
+
+/* Stagger children for nicer feel */
+.animate-stagger > * {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+    animation: fade-in-up .5s ease-out both;
+}
+.animate-stagger > *:nth-child(1) { animation-delay: .05s; }
+.animate-stagger > *:nth-child(2) { animation-delay: .1s; }
+.animate-stagger > *:nth-child(3) { animation-delay: .15s; }
+.animate-stagger > *:nth-child(4) { animation-delay: .2s; }
+.animate-stagger > *:nth-child(5) { animation-delay: .25s; }
 
 section {
     min-height: 100vh;

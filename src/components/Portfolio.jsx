@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import undeadSiegeImg from '../img/Undead Siege .png';
+import eServicesImg from '../img/eServices.png';
 import divineSushiImg from '../img/Options Page .png';
 import githubImg from '../img/GitHub.png';
 
@@ -10,11 +10,11 @@ const Portfolio = () => {
             <h2 className="heading">Latest <span>Project</span></h2>
             <div className="portfolio-container">
                 <div className="portfolio-box">
-                    <img src={undeadSiegeImg} alt="Undead Siege" />
+                    <img src={eServicesImg} alt="eServices" />
                     <div className="portfolio-layer">
-                        <h4>Undead Siege</h4>
-                        <p>A top-down zombie shooter made using pygame where you fight against endless hordes of undead with different weapons and power-ups.</p>
-                        <a href="https://github.com/JOSHUA-A69/Undead-Siege" target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a>
+                        <h4>eReligiousServices</h4>
+                        <p>eReligiousServices is a strategic innovation for Holy Name University that supports CREaM’s mission by streamlining administrative, liturgical, and organizational processes into a single digital platform, enhancing transparency, collaboration, and community engagement.</p>
+                        <a href="https://github.com/JOSHUA-A69/CAPSTONE-PROJECT" target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">

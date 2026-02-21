@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
+    const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
 
     const handleMenuClick = () => {
         setIsActive(!isActive);
@@ -24,9 +25,21 @@ const Navbar = () => {
 
     // Active class handled by NavLink
 
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
+    };
+
     return (
         <header className="header">
             <a href="/" className="logo">Personal Portfolio</a>
+            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                <i className={`fa-solid ${theme === 'light' ? 'fa-moon' : 'fa-sun'}`}></i>
+            </button>
             <div id="menu-icon" onClick={handleMenuClick}>
                 <i className={`bx ${isActive ? 'bx-x' : 'bx-menu'}`}></i>
             </div>

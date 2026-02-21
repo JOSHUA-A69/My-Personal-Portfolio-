@@ -6,9 +6,9 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: linear-gradient(180deg, #0b0c10 0%, #0d0f13 100%);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 -1px 0 rgba(166,226,46,0.12);
+    background: var(--footer-bg);
+    border-top: 1px solid var(--footer-border);
+    box-shadow: var(--footer-shadow);
 }
 
 .footer-text p {

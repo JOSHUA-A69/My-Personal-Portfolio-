@@ -20,11 +20,12 @@
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    outline: 1px solid rgba(255,255,255,0.08);
+    outline: 1px solid var(--card-border);
     overflow: hidden;
     display: flex;
     width: 100%;
     min-height: clamp(260px, 38vw, 420px);
+    background: var(--portfolio-box-bg);
 }
 
 .portfolio-box img {
@@ -44,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 12, 16, 0.88);
+    background: var(--portfolio-overlay);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,12 +63,14 @@
 .portfolio-layer h4 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--portfolio-text-color);
 }
 
 .portfolio-layer p {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
     max-width: 90%;
+    color: var(--portfolio-text-color);
 }
 
 .portfolio-layer a {
@@ -76,7 +79,7 @@
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--portfolio-btn-bg);
     border-radius: 50%;
     transition: .3s ease;
 }
@@ -87,7 +90,7 @@
 
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--portfolio-btn-icon);
 }
 
 /* Responsive Design */

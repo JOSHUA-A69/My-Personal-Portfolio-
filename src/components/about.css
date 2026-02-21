@@ -12,7 +12,7 @@
 .about-img img {
     width: 35rem;
     border-radius: 2rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: var(--image-shadow);
 }
 
 .heading {

@@ -2,8 +2,8 @@
 
 /* Darker neutral theme override for Services section */
 .services {
-    --bg-color: #0e0f12;
-    --second-bg-color: #14161b;
+    --bg-color: var(--services-bg);
+    --second-bg-color: var(--services-card-bg);
     /* keep existing accent color via --main-color */
 }
 
@@ -23,7 +23,7 @@
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--card-border);
     transition: .25s ease;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .tech-content {
-    background: #0c0d10;
+    background: var(--tech-content-bg);
     padding: 1.25rem;
     border-radius: 1rem;
     display: flex;
@@ -109,8 +109,8 @@
     width: 56px;
     height: 56px;
     border-radius: 0.9rem;
-    background: #121317;
-    outline: 1px solid rgba(255, 255, 255, 0.06);
+    background: var(--tech-icon-bg);
+    outline: 1px solid var(--tech-icon-border);
     transition: transform 0.25s ease, filter 0.25s ease;
 }
 .techstacks-icons .tech-icon i {
@@ -128,7 +128,7 @@
 
 /* Ensure GitHub icon contrasts on black */
 .techstacks-icons .tech-icon.github {
-    background: #1a1a1a;
+    background: var(--tech-icon-github-bg);
 }
 .techstacks-icons .tech-icon.github i {
     color: #ffffff;

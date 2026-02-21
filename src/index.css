@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000;
-  color: #e6e6e6;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 code {
@@ -14,10 +14,67 @@ code {
     monospace;
 }
 
-/* Default accent color if not set elsewhere */
+/* Theme: light is default */
 :root {
+  --bg-color: #f6f8fb;
+  --second-bg-color: #e9eef5;
+  --text-color: #152238;
+  --main-color: #84c529;
+  --header-bg: linear-gradient(180deg, #ffffff 0%, #f3f6fb 100%);
+  --header-border: rgba(21, 34, 56, 0.12);
+  --header-shadow: 0 1px 0 rgba(132, 197, 41, 0.2);
+  --footer-bg: linear-gradient(180deg, #f1f4f9 0%, #e7edf6 100%);
+  --footer-border: rgba(21, 34, 56, 0.12);
+  --footer-shadow: 0 -1px 0 rgba(132, 197, 41, 0.2);
+  --card-border: rgba(21, 34, 56, 0.12);
+  --tech-content-bg: #f0f4fa;
+  --tech-icon-bg: #ffffff;
+  --tech-icon-border: rgba(21, 34, 56, 0.12);
+  --tech-icon-github-bg: #111111;
+  --portfolio-overlay: rgba(246, 248, 251, 0.96);
+  --portfolio-text-color: #152238;
+  --portfolio-btn-bg: #152238;
+  --portfolio-btn-icon: #ffffff;
+  --portfolio-box-bg: #1a1d24;
+  --image-shadow: 0 0 2rem rgba(21, 34, 56, 0.15);
+  --text-shadow-glow: 0 0 16px rgba(132, 197, 41, 0.2);
+  --btn-gradient: linear-gradient(90deg, #84c529 0%, #72b521 100%);
+  --btn-shadow: 0 0 24px rgba(132, 197, 41, 0.2);
+  --btn-shadow-hover: 0 6px 24px rgba(132, 197, 41, 0.3);
+  --btn-text-color: #ffffff;
+  --hover-text-color: #ffffff;
+  --services-bg: #eef2f8;
+  --services-card-bg: #dfe6f0;
+}
+
+[data-theme='dark'] {
   --bg-color: #000;
   --second-bg-color: #0f1115;
   --text-color: #e6e6e6;
-  --main-color: #A6E22E; /* revert to green accent for text & hovers */
+  --main-color: #a6e22e;
+  --header-bg: linear-gradient(180deg, #0a0b0d 0%, #0e1014 100%);
+  --header-border: rgba(255, 255, 255, 0.08);
+  --header-shadow: 0 1px 0 rgba(166, 226, 46, 0.15);
+  --footer-bg: linear-gradient(180deg, #0b0c10 0%, #0d0f13 100%);
+  --footer-border: rgba(255, 255, 255, 0.08);
+  --footer-shadow: 0 -1px 0 rgba(166, 226, 46, 0.12);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --tech-content-bg: #0c0d10;
+  --tech-icon-bg: #121317;
+  --tech-icon-border: rgba(255, 255, 255, 0.06);
+  --tech-icon-github-bg: #1a1a1a;
+  --portfolio-overlay: rgba(10, 12, 16, 0.92);
+  --portfolio-text-color: #e6e6e6;
+  --portfolio-btn-bg: #e6e6e6;
+  --portfolio-btn-icon: #0f1115;
+  --portfolio-box-bg: transparent;
+  --image-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  --text-shadow-glow: 0 0 16px rgba(166, 226, 46, 0.12);
+  --btn-gradient: linear-gradient(90deg, #a6e22e 0%, #90d52c 100%);
+  --btn-shadow: 0 0 24px rgba(166, 226, 46, 0.15);
+  --btn-shadow-hover: 0 6px 24px rgba(166, 226, 46, 0.25);
+  --btn-text-color: #0f1115;
+  --hover-text-color: #0f1115;
+  --services-bg: #0e0f12;
+  --services-card-bg: #14161b;
 }

@@ -6,10 +6,10 @@
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: linear-gradient(180deg, #0a0b0d 0%, #0e1014 100%);
+    background: var(--header-bg);
     backdrop-filter: saturate(120%) blur(6px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 1px 0 rgba(166,226,46,0.15);
+    border-bottom: 1px solid var(--header-border);
+    box-shadow: var(--header-shadow);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,6 +32,29 @@
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 9%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--main-color);
+    color: var(--hover-text-color);
 }
 
 .navbar {

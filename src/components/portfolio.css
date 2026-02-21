@@ -10,10 +10,10 @@
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     align-items: stretch;
     gap: 2.5rem;
-    max-width: 1200px;
+    width: min(100%, 1100px);
     margin: 0 auto;
 }
 
@@ -23,7 +23,8 @@
     outline: 1px solid rgba(255,255,255,0.08);
     overflow: hidden;
     display: flex;
-    height: 320px; /* make boxes big enough, similar to services */
+    width: 100%;
+    min-height: clamp(260px, 38vw, 420px);
 }
 
 .portfolio-box img {
@@ -43,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0, .35), var(--main-color));
+    background: rgba(10, 12, 16, 0.88);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,20 +93,15 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
         padding: 0 2rem;
+        gap: 2rem;
     }
 }
 
 @media (max-width: 617px) {
     .portfolio-container {
-        grid-template-columns: 1fr;
         padding: 0 1rem;
-    }
-    
-    .portfolio-box {
-        max-width: 500px;
-        margin: 0 auto;
+        gap: 1.5rem;
     }
 
     .portfolio-layer h4 {

@@ -3,7 +3,7 @@ import './services.css';
 import cssLogo from '../img/css-logo.svg';
 
 const Services = () => {
-    const [activeTab, setActiveTab] = useState('Stack');
+    const [activeTab] = useState('Stack');
 
     const categories = {
         Stack: [

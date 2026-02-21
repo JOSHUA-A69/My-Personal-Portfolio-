@@ -116,6 +116,11 @@
 .techstacks-icons .tech-icon i {
     font-size: 30px;
 }
+.techstacks-icons .tech-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 .techstacks-icons .tech-icon:hover {
     transform: translateY(-4px);
     filter: drop-shadow(0 0 0.45rem var(--main-color));
@@ -176,4 +181,5 @@
     .techstacks-icons { gap: 0.75rem; row-gap: 1rem; }
     .techstacks-icons .tech-icon { width: 48px; height: 48px; }
     .techstacks-icons .tech-icon i { font-size: 26px; }
+    .techstacks-icons .tech-icon img { width: 26px; height: 26px; }
 }

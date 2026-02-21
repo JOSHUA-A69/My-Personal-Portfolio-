@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './services.css';
+import cssLogo from '../img/css-logo.svg';
 
 const Services = () => {
     const [activeTab, setActiveTab] = useState('Stack');
@@ -7,10 +8,11 @@ const Services = () => {
     const categories = {
         Stack: [
             { icon: 'devicon-html5-plain colored', alt: 'HTML' },
-            { icon: 'devicon-css3-plain colored', alt: 'CSS' },
+            { image: cssLogo, alt: 'CSS' },
             { icon: 'devicon-javascript-plain colored', alt: 'JavaScript' },
             { icon: 'devicon-react-original colored', alt: 'React' },
             { icon: 'devicon-bootstrap-plain colored', alt: 'Bootstrap' },
+            { icon: 'devicon-tailwindcss-original colored', alt: 'Tailwind CSS' },
             { icon: 'devicon-nodejs-plain colored', alt: 'Node.js' },
             { icon: 'devicon-php-plain colored', alt: 'PHP' },
             { icon: 'devicon-laravel-plain colored', alt: 'Laravel' },
@@ -22,7 +24,8 @@ const Services = () => {
             { icon: 'devicon-vscode-plain colored', alt: 'VS Code' },
             { icon: 'devicon-npm-original-wordmark colored', alt: 'npm' },
             { icon: 'devicon-docker-plain colored', alt: 'Docker' },
-            { icon: 'devicon-vercel-original colored', alt: 'Vercel' }
+            { icon: 'devicon-vercel-original colored', alt: 'Vercel' },
+            { image: 'https://cdn.simpleicons.org/render/46E3B7', alt: 'Render' }
         ]
     };
 
@@ -80,8 +83,8 @@ const Services = () => {
                     <div className="tech-content">
                         <div className="techstacks-icons">
                             {categories[activeTab].map((tech, index) => (
-                                <span className={`tech-icon ${tech.alt.toLowerCase()}`} key={index} title={tech.alt} aria-label={tech.alt}>
-                                    <i className={tech.icon}></i>
+                                <span className={`tech-icon ${tech.alt.toLowerCase()} ${tech.customClass || ''}`} key={index} title={tech.alt} aria-label={tech.alt}>
+                                    {tech.image ? <img src={tech.image} alt={tech.alt} loading="lazy" /> : <i className={tech.icon}></i>}
                                 </span>
                             ))}
                         </div>

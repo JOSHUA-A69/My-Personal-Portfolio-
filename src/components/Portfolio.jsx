@@ -14,7 +14,7 @@ const Portfolio = () => {
                     <div className="portfolio-layer">
                         <h4>eReligiousServices</h4>
                         <p>eReligiousServices is a strategic innovation for Holy Name University that supports CREaM’s mission by streamlining administrative, liturgical, and organizational processes into a single digital platform, enhancing transparency, collaboration, and community engagement.</p>
-                        <a href="https://github.com/JOSHUA-A69/CAPSTONE-PROJECT" target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://ereligiousservices.onrender.com/" target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div className="portfolio-box">

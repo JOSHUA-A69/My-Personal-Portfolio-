@@ -38,19 +38,22 @@ const Services = () => {
                     <i className="fas fa-code"></i>
                     <h3>Full Stack Development</h3>
                     <p>
-                        With experience in creating programs. 
-                        Strong collaboration skills and a proven history with full stack development. 
-                        I'm both capable of Back end and Front end.
+                        With hands-on experience in developing functional programs and systems.
+                        Strong collaboration skills with a proven background in full-stack
+                        development. Capable of handling both front-end and back-end tasks, with a
+                        stronger focus on logic building, problem-solving, system functionality,
+                        and efficient application performance.
                     </p>
                 </div>
 
-                {/* Data Analytics Service */}
+                {/* Database Management Service */}
                 <div className="services-box">
                     <i className="fa-solid fa-database"></i>
-                    <h3>Data Analytics</h3>
+                    <h3>Database Management</h3>
                     <p>
-                        With experience in data analysis and proficiency in tools that support insightful reporting, 
-                        I excel at generating valuable insights to inform business decisions.
+                        With hands-on experience in database management, I design and maintain
+                        efficient, reliable, and secure databases that support business operations,
+                        optimize data flow, and ensure system accuracy and performance.
                     </p>
                 </div>
 
@@ -59,18 +62,22 @@ const Services = () => {
                     <i className="fa-solid fa-gears"></i>
                     <h3>DevOps & Deployment</h3>
                     <p>
-                        CI/CD and containerized workflows using Git/GitHub, Docker, and modern hosting like Vercel. 
-                        Focused on reliable releases, observability, and smooth handoffs from development to production.
+                        With hands-on experience in DevOps and deployment workflows using
+                        Git/GitHub, Docker, and modern hosting platforms. Focused on reliable
+                        releases, efficient version control, smooth deployment processes, and
+                        seamless transitions from development to production environments.
                     </p>
                 </div>
 
-                {/* System Management Service */}
+                {/* IT Specialist Service */}
                 <div className="services-box">
                     <i className="fa-solid fa-server"></i>
-                    <h3>System Management</h3>
+                    <h3>IT Specialist</h3>
                     <p>
-                        Practical administration across Windows and Linux: environment setup, configuration, and maintenance. 
-                        Emphasis on security, backups, and performance tuning for stable operations.
+                        With hands-on experience in IT support, system administration, and
+                        networking. Skilled in configuring and maintaining Windows and Linux
+                        environments, troubleshooting hardware, software, and connectivity issues,
+                        and ensuring stable, secure, and efficient day-to-day operations.
                     </p>
                 </div>
             </div>

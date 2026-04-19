@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
 import './home.css';
-import resume from '../Resume/UY - Resume.docx.pdf';
+import resume from '../Resume/JOSHUA_RUSSEL_P._UY_FlowCV_Resume_2026-04-19.pdf';
 
 
 

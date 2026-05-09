@@ -1,12 +1,12 @@
 import React from 'react';
 import './about.css';
-
+import gradPic from '../img/Grad Pic Formal.JPG';
 
 const About = () => {
     return (
         <section className="about" id="about">
             <div className="about-img">
-                <img src={require('../img/About ME pic.png')} alt="Personal-Pic" />
+                <img src={gradPic} alt="Personal-Pic" />
             </div>
             
             <div className="about-content">

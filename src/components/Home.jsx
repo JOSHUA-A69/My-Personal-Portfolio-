@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
 import './home.css';
-import resume from '../Resume/Joshua_Uy_Resume.pdf';
+import resume from '../Resume/Joshua_Uy_Resume_Full.pdf';
 
 
 
@@ -17,7 +17,7 @@ const Home = () => {
         // Typed.js initialization
             const typed = new Typed('.multiple-text', {
                 strings: [
-                    " a full-stack developer and IT specialist building scalable, user‑centric systems"
+                    " a full-stack developer and graphic designer.",
                 ],
             typeSpeed: 100,
             backSpeed: 100,
